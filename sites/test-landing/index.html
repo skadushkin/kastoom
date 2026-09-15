@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="badge">Новый лендинг</p>
+    <h1>{{TITLE}}</h1>
+    <p class="subtitle">Домен: {{DOMAIN}}</p>
+    <a class="btn" href="#contact">Оставить заявку</a>
+  </header>
+
+  <section class="features">
+    <article>
+      <h2>Быстрый старт</h2>
+      <p>Страница создана через Telegram-бот и готова к деплою.</p>
+    </article>
+    <article>
+      <h2>Редактирование</h2>
+      <p>Отправьте задачу в бот — Cursor внесёт правки и задеплоит.</p>
+    </article>
+    <article>
+      <h2>Адаптив</h2>
+      <p>Базовый шаблон корректно отображается на телефоне и десктопе.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Связаться</h2>
+    <form>
+      <input type="text" placeholder="Имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© {{TITLE}}</p>
+  </footer>
+</body>
+</html>
