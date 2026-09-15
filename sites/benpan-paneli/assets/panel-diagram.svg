@@ -1,0 +1,18 @@
+<svg width="640" height="520" viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect width="640" height="520" rx="24" fill="#353a31"/>
+  <rect x="80" y="60" width="480" height="400" rx="8" fill="#2b3027" stroke="#71845b" stroke-width="1.5"/>
+  <rect x="110" y="90" width="420" height="70" fill="#b3ce7d" opacity="0.85"/>
+  <rect x="110" y="175" width="420" height="55" fill="#8fa86a" opacity="0.55"/>
+  <rect x="110" y="245" width="420" height="55" fill="#b3ce7d" opacity="0.35"/>
+  <rect x="110" y="315" width="420" height="55" fill="#8fa86a" opacity="0.45"/>
+  <rect x="110" y="385" width="420" height="45" fill="#b3ce7d" opacity="0.25"/>
+  <line x1="110" y1="160" x2="530" y2="160" stroke="#f5f4ef" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+  <line x1="110" y1="230" x2="530" y2="230" stroke="#f5f4ef" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+  <line x1="110" y1="300" x2="530" y2="300" stroke="#f5f4ef" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+  <line x1="110" y1="370" x2="530" y2="370" stroke="#f5f4ef" stroke-width="1" stroke-dasharray="6 6" opacity="0.4"/>
+  <circle cx="560" cy="125" r="5" fill="#b3ce7d"/>
+  <circle cx="560" cy="202" r="5" fill="#b3ce7d"/>
+  <circle cx="560" cy="272" r="5" fill="#b3ce7d"/>
+  <circle cx="560" cy="342" r="5" fill="#b3ce7d"/>
+  <text x="80" y="495" fill="#c4cfb5" font-family="Arial, sans-serif" font-size="13"> 51@8AB0O CB5?;Q==0O ?0=5;L · 702>4A:0O B>G=>ABL ±3 <<</text>
+</svg>
