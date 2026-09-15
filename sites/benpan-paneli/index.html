@@ -1,419 +1,318 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Готовые ЖБИ панели БЭНПАН — заводское качество для вашего дома</title>
-  <meta name="description" content="Готовые железобетонные утеплённые панели БЭНПАН: заводское производство, каналы для коммуникаций, энергоэффективность и монтаж за 3–4 месяца. Запросите расчёт комплекта.">
-  <meta name="theme-color" content="#292b29">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Железобетонные панели БЭНПАН: заводское качество, утепление, каналы для коммуникаций. Поставка стеновых панелей, перекрытий и перегородок для малоэтажного строительства.">
+  <meta name="theme-color" content="#ff9900">
+  <title>ЖБИ панели БЭНПАН — заводское производство и поставка</title>
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
-    <symbol id="phone" viewBox="0 0 24 24"><path d="M7 3H3c0 10 8 18 18 18v-4l-5-2-2 2a16 16 0 0 1-7-7l2-2-2-5ZM15 3a7 7 0 0 1 6 6M15 7a3 3 0 0 1 2 2"/></symbol>
-    <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3 4 7v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V7l-8-4Z"/></symbol>
-    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-    <symbol id="factory" viewBox="0 0 24 24"><path d="M3 21V9l5 3V9l5 3V5l8 5v11H3Z"/></symbol>
-  </svg>
-
-  <a class="skip" href="#main">К содержанию</a>
-
-  <header class="header wrap">
-    <a href="#" aria-label="БЭНПАН — в начало">
-      <img class="logo" src="assets/logo.svg" alt="БЭНПАН" width="156" height="62">
-    </a>
-    <nav id="site-menu" class="header-nav" aria-label="Навигация">
-      <a href="#catalog">Панели</a>
-      <a href="#technology">Технология</a>
-      <a href="#compare">Сравнение</a>
-      <a href="#process">Производство</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
-    <div class="header-right">
-      <a class="phone-pill" href="tel:+74992831614">
-        <svg><use href="#phone"/></svg>
-        +7 (499) 283-16-14
-      </a>
-      <span class="motto">ЗАВОД · ПАНЕЛИ · ДОМ</span>
-    </div>
-    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="site-menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </header>
-
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-copy wrap">
-        <h1 id="hero-title">Готовые<br><span>ЖБИ панели</span></h1>
-        <p class="hero-title">Заводские железобетонные панели БЭНПАН<br>для быстрого и надёжного строительства</p>
-        <p class="date">СОБСТВЕННОЕ ПРОИЗВОДСТВО · МОСКВА И МО</p>
-        <p class="hero-intro">Ребристые утеплённые панели с каналами для коммуникаций,<br>готовым фасадом и заводской точностью ±3 мм.</p>
-        <div class="hero-actions">
-          <a class="button" href="#contacts">Запросить расчёт комплекта<svg><use href="#arrow"/></svg></a>
-          <a class="button button-outline" href="#catalog">Смотреть линейку панелей</a>
+  <div class="site">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="#top">
+          <img src="assets/logo.svg" alt="БЭНПАН" width="156" height="62">
+        </a>
+        <nav id="site-menu" class="header__nav" aria-label="Основное меню">
+          <a href="#products">Продукция</a>
+          <a href="#technology">Технология</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#process">Этапы</a>
+          <a href="#faq">Вопросы</a>
+        </nav>
+        <div class="header__contacts">
+          <a class="header__phone" href="tel:+74992831614">+7 499 283-16-14</a>
+          <a class="header__mail" href="mailto:dom@benpan.ru">dom@benpan.ru</a>
         </div>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="site-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <span class="location">ООО «БЭНПАН»</span>
-    </section>
+    </header>
 
-    <section class="stats wrap" aria-label="Преимущества">
-      <article>
-        <svg><use href="#shield"/></svg>
-        <strong>50 лет</strong>
-        <span>гарантия на конструкцию</span>
-      </article>
-      <article>
-        <svg><use href="#clock"/></svg>
-        <strong>3–4 мес.</strong>
-        <span>монтаж коробки дома</span>
-      </article>
-      <article>
-        <svg><use href="#factory"/></svg>
-        <strong>±3 мм</strong>
-        <span>заводская геометрия</span>
-      </article>
-      <article>
-        <strong>52 дБ</strong>
-        <span>шумоизоляция стен</span>
-      </article>
-    </section>
-
-    <section class="village-strip" aria-labelledby="strip-title">
-      <div class="wrap strip-heading">
-        <div>
-          <p class="eyebrow">ПРОИЗВОДСТВО И МОНТАЖ</p>
-          <h2 id="strip-title">Панели с завода на объект</h2>
-        </div>
-        <button id="pause-strip" class="strip-pause" type="button" aria-label="Приостановить движение фотографий" aria-pressed="false">Ⅱ</button>
-      </div>
-      <div class="strip-window">
-        <div class="strip-track">
-          <div class="strip-group">
-            <figure class="strip-photo"><div class="strip-visual strip-visual-1"></div><figcaption>Цех производства панелей</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-2"></div><figcaption>Контроль качества на линии</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-3"></div><figcaption>Утеплённая ребристая панель</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-4"></div><figcaption>Монтаж на стройплощадке</figcaption></figure>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="hero__label">Заводское производство</p>
+            <h1>Железобетонные панели для современного строительства</h1>
+            <p class="hero__lead">Ребристые утеплённые ЖБИ панели собственного производства: точная геометрия, готовый фасад и встроенные каналы для инженерных систем. Поставляем комплекты для частных домов, таунхаусов и коммерческих объектов.</p>
+            <ul class="hero__stats">
+              <li><strong>±3 мм</strong><span>заводская точность</span></li>
+              <li><strong>100+ лет</strong><span>расчётный ресурс</span></li>
+              <li><strong>52 дБ</strong><span>шумоизоляция</span></li>
+            </ul>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Получить расчёт</a>
+              <a class="btn btn--outline" href="#products">Смотреть ассортимент</a>
+            </div>
           </div>
-          <div class="strip-group" aria-hidden="true">
-            <figure class="strip-photo"><div class="strip-visual strip-visual-1"></div><figcaption>Цех производства панелей</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-2"></div><figcaption>Контроль качества на линии</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-3"></div><figcaption>Утеплённая ребристая панель</figcaption></figure>
-            <figure class="strip-photo"><div class="strip-visual strip-visual-4"></div><figcaption>Монтаж на стройплощадке</figcaption></figure>
+          <div class="hero__card">
+            <div class="hero__card-badge">БЭНПАН</div>
+            <h2>Комплект панелей под ваш проект</h2>
+            <p>Подберём состав комплекта, рассчитаем объём и сроки отгрузки с производственной площадки.</p>
+            <ul class="hero__card-list">
+              <li>Стеновые несущие панели</li>
+              <li>Плиты межэтажного перекрытия</li>
+              <li>Межкомнатные перегородки</li>
+              <li>Дополнительные элементы и узлы</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="catalog-section wrap" id="catalog" aria-labelledby="catalog-title">
-      <p class="eyebrow">КАТАЛОГ ПАНЕЛЕЙ</p>
-      <h2 id="catalog-title">Выберите линейку<br>готовых панелей</h2>
-      <p class="section-description">Все панели производятся на собственных площадках БЭНПАН и поставляются комплектом под ваш проект — от стеновых элементов до перекрытий.</p>
-
-      <div class="house-grid">
-        <article class="house-card">
-          <div class="house-cover cover-apex"><span>Базовая линейка</span></div>
-          <div class="house-card-body">
-            <div class="house-card-top">
-              <h3>АПЕКС</h3>
-              <span>Стандарт</span>
+      <section class="features-strip">
+        <div class="container features-strip__grid">
+          <article class="feature-pill">
+            <span class="feature-pill__icon">01</span>
+            <div>
+              <h3>Фиксированная спецификация</h3>
+              <p>Состав комплекта и объём панелей согласуются до отгрузки.</p>
             </div>
-            <p class="card-text">Надёжные стеновые и перекрывающие панели для частного домостроения с заводской геометрией и каналами под инженерию.</p>
-            <div class="house-specs">
-              <span>Стены и перекрытия</span>
-              <span>Утепление в составе</span>
-              <span>Монтаж 3–4 мес.</span>
+          </article>
+          <article class="feature-pill">
+            <span class="feature-pill__icon">02</span>
+            <div>
+              <h3>Быстрый монтаж</h3>
+              <p>Коробка из панелей собирается за считанные недели, а не месяцы.</p>
             </div>
-            <div class="house-card-bottom">
-              <strong>от проекта</strong>
-              <span class="house-arrow">→</span>
+          </article>
+          <article class="feature-pill">
+            <span class="feature-pill__icon">03</span>
+            <div>
+              <h3>Энергоэффективность</h3>
+              <p>Утепление и герметичные узлы снижают расходы на отопление.</p>
             </div>
-          </div>
-        </article>
-
-        <article class="house-card">
-          <div class="house-cover cover-d"><span>Популярный выбор</span></div>
-          <div class="house-card-body">
-            <div class="house-card-top">
-              <h3>БЭНПАН–Д</h3>
-              <span>Оптимум</span>
-            </div>
-            <p class="card-text">Сбалансированная комплектация: усиленная теплоизоляция, готовые фасадные решения и оптимальный бюджет на квадратный метр.</p>
-            <div class="house-specs">
-              <span>Готовый фасад</span>
-              <span>Каналы для сетей</span>
-              <span>Энергоэффективность</span>
-            </div>
-            <div class="house-card-bottom">
-              <strong>расчёт по запросу</strong>
-              <span class="house-arrow">→</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="house-card">
-          <div class="house-cover cover-plus"><span>Расширенная</span></div>
-          <div class="house-card-body">
-            <div class="house-card-top">
-              <h3>БЭНПАН+</h3>
-              <span>Плюс</span>
-            </div>
-            <p class="card-text">Панели с увеличенным пролётом до 11–15 метров без колонн, потолки от 3,5 м и повышенной шумоизоляцией 52 дБ.</p>
-            <div class="house-specs">
-              <span>Пролёт до 15 м</span>
-              <span>Потолки 3,5+ м</span>
-              <span>52 дБ</span>
-            </div>
-            <div class="house-card-bottom">
-              <strong>индивидуально</strong>
-              <span class="house-arrow">→</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="house-card">
-          <div class="house-cover cover-premium"><span>Премиум</span></div>
-          <div class="house-card-body">
-            <div class="house-card-top">
-              <h3>БЭНПАН Премиум</h3>
-              <span>Максимум</span>
-            </div>
-            <p class="card-text">Фибробетонные панели повышенной прочности, сертифицированные и экологически безопасные — для архитектурно сложных проектов.</p>
-            <div class="house-specs">
-              <span>Фибробетон</span>
-              <span>100+ лет ресурс</span>
-              <span>Сертификация</span>
-            </div>
-            <div class="house-card-bottom">
-              <strong>под ключ</strong>
-              <span class="house-arrow">→</span>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="catalog-bottom">
-        <a class="button" href="#contacts">Получить спецификацию<svg><use href="#arrow"/></svg></a>
-        <span>Комплект формируется под площадь и планировку вашего дома</span>
-      </div>
-    </section>
-
-    <section class="decision-section wrap" id="included">
-      <p class="eyebrow">ЧТО ВХОДИТ В КОМПЛЕКТ</p>
-      <h2>Готовые панели — это не только стены</h2>
-      <p class="decision-intro">Вы получаете заводской комплект железобетонных изделий с понятной спецификацией материалов, фиксированным составом и прозрачной сметой.</p>
-      <div class="decision-grid">
-        <article>
-          <span>01 / КОНСТРУКЦИЯ</span>
-          <h3>Стеновые и перекрывающие панели</h3>
-          <p>Ребристые утеплённые элементы с заводскими каналами для электрики, водоснабжения и отопления внутри стен.</p>
-        </article>
-        <article>
-          <span>02 / КАЧЕСТВО</span>
-          <h3>Заводской контроль</h3>
-          <p>Точность ±3 мм, сертифицированный фибробетон, готовый фасадный слой и проверенная теплозащита в каждой панели.</p>
-        </article>
-        <article>
-          <span>03 / СЕРВИС</span>
-          <h3>От проекта до монтажа</h3>
-          <p>Проектная документация, дизайн-проект со спецификацией, доставка на объект и монтаж коробки за 3–4 месяца.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="benpan-tech wrap" id="technology" aria-labelledby="tech-title">
-      <div class="tech-copy">
-        <p class="eyebrow">ТЕХНОЛОГИЯ БЭНПАН™</p>
-        <h2 id="tech-title">Инновационные ЖБИ панели<br>собственного производства</h2>
-        <p class="section-description">Мы производим железобетонные ребристые утеплённые панели на собственных площадках. Дом из таких панелей энергоэффективен, долговечен и собирается значительно быстрее традиционных технологий.</p>
-        <ul class="tech-features">
-          <li><span>01</span>Каналы для коммуникаций внутри стен</li>
-          <li><span>02</span>Готовый фасад с завода</li>
-          <li><span>03</span>Срок службы 100+ лет</li>
-        </ul>
-        <a class="button" href="#contacts">Узнать стоимость комплекта<svg><use href="#arrow"/></svg></a>
-      </div>
-      <figure class="panel-visual">
-        <img src="assets/panel-diagram.svg" width="640" height="520" alt="Схема ребристой утеплённой панели БЭНПАН">
-        <span class="panel-label concrete">Железобетонный каркас</span>
-        <span class="panel-label insulation">Утеплитель и фасад</span>
-      </figure>
-    </section>
-
-    <section class="compare-section wrap" id="compare" aria-labelledby="compare-title">
-      <p class="eyebrow">СРАВНЕНИЕ МАТЕРИАЛОВ</p>
-      <h2 id="compare-title">Почему ЖБИ панели<br>выигрывают у других технологий</h2>
-      <p class="section-description">Сравниваем самые популярные материалы для частного домостроения — по скорости, теплу, прочности и точности.</p>
-      <div class="table-scroll">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Технология</th>
-              <th>Срок строительства</th>
-              <th>Теплоизоляция</th>
-              <th>Долговечность</th>
-              <th>Точность</th>
-              <th>Шумоизоляция</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Кирпич</td>
-              <td>8–12 мес.</td>
-              <td>Нужно утепление</td>
-              <td>Высокая</td>
-              <td>Зависит от каменщика</td>
-              <td>Средняя</td>
-            </tr>
-            <tr>
-              <td>Газобетон</td>
-              <td>5–8 мес.</td>
-              <td>Хорошая</td>
-              <td>Боится влаги</td>
-              <td>Зависит от блоков</td>
-              <td>Средняя</td>
-            </tr>
-            <tr>
-              <td>Каркас</td>
-              <td>2–4 мес.</td>
-              <td>Нужна вентиляция</td>
-              <td>25–50 лет</td>
-              <td>Зависит от бригады</td>
-              <td>Низкая</td>
-            </tr>
-            <tr class="highlight">
-              <td><strong>ЖБИ панели БЭНПАН</strong></td>
-              <td><strong>3–4 мес.</strong></td>
-              <td><strong>Лучшая в классе</strong></td>
-              <td><strong>100+ лет</strong></td>
-              <td><strong>±3 мм</strong></td>
-              <td><strong>52 дБ</strong></td>
-            </tr>
-            <tr>
-              <td>Монолит</td>
-              <td>8–12 мес.</td>
-              <td>Нужно утепление</td>
-              <td>Очень высокая</td>
-              <td>Зависит от опалубки</td>
-              <td>Высокая</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="process-section wrap" id="process" aria-labelledby="process-title">
-      <p class="eyebrow">КАК МЫ РАБОТАЕМ</p>
-      <h2 id="process-title">От завода до готовой коробки</h2>
-      <div class="process-grid">
-        <article>
-          <span>01</span>
-          <h3>Производство панелей</h3>
-          <p>Изготовление ж/б панелей на производственных площадках БЭНПАН с контролем качества на каждом этапе.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Фундамент и цоколь</h3>
-          <p>Подготовка основания под монтаж с учётом проекта и грунтовых условий вашего участка.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Монтаж конструкций</h3>
-          <p>Сборка коробки дома из готовых панелей — быстро, точно и без «мокрых» процессов на стройке.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Инженерия и отделка</h3>
-          <p>Прокладка коммуникаций, кровля, финишные работы — каждый этап закреплён в договоре и смете.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="homes" aria-labelledby="homes-title">
-      <div class="homes-bg" aria-hidden="true"></div>
-      <div class="homes-shade"></div>
-      <div class="wrap homes-copy">
-        <p class="eyebrow">ПРИМЕРЫ ПРОЕКТОВ</p>
-        <h2 id="homes-title">Панели для домов<br>от 98 до 132 м²</h2>
-        <p>Типовые проекты БЭНПАН — БП-98/5, БП-131/3, ПБ-123, ПБ-134 — собираются из одного комплекта панелей с адаптацией под ваш участок.</p>
-        <div class="home-types">
-          <span>132 м² · 5 комнат</span>
-          <span>10×11 м</span>
-          <span>от 3,16 млн ₽</span>
+          </article>
         </div>
-        <a class="button" href="#contacts">Рассчитать комплект панелей<svg><use href="#arrow"/></svg></a>
-      </div>
-    </section>
+      </section>
 
-    <section class="decision-section decision-soft wrap" id="faq" aria-labelledby="faq-title">
-      <p class="eyebrow">ЧАСТЫЕ ВОПРОСЫ</p>
-      <h2 id="faq-title">Ответы о готовых панелях</h2>
-      <div class="faq-grid">
-        <details>
-          <summary>Чем готовые панели отличаются от типового ЖБИ?</summary>
-          <p>Наши панели — не просто плиты: это утеплённые ребристые элементы с каналами для инженерии, готовым фасадом и заводской точностью. Они проектируются под конкретный дом.</p>
-        </details>
-        <details>
-          <summary>Можно ли купить только панели без строительства?</summary>
-          <p>Да, мы поставляем комплект панелей с проектной документацией. Монтаж можно заказать у нас или у вашего подрядчика по нашим чертежам.</p>
-        </details>
-        <details>
-          <summary>Как формируется цена комплекта?</summary>
-          <p>На стоимость влияют площадь, архитектура, выбранная линейка (АПЕКС, БЭНПАН–Д, БЭНПАН+, Премиум) и комплектация. Цена фиксируется в договоре.</p>
-        </details>
-        <details>
-          <summary>Работаете ли вы в Москве и области?</summary>
-          <p>Да, производство и монтаж панелей выполняем в Москве и Московской области. Подготовим расчёт и спецификацию под ваш проект.</p>
-        </details>
-      </div>
-    </section>
+      <section id="products" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__label">Ассортимент</p>
+            <h2>Продукция для малоэтажного строительства</h2>
+            <p class="section__desc">Полный набор железобетонных изделий для возведения тёплого и долговечного здания — от несущих стен до внутренних перегородок.</p>
+          </div>
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card__num">A</div>
+              <h3>Стеновые ЖБИ панели</h3>
+              <p>Несущие ребристые панели с заводским утеплением, готовым декоративным слоем и каналами под коммуникации.</p>
+              <ul>
+                <li>Высота до 3,5 м и более</li>
+                <li>Пролёты без колонн до 11–15 м</li>
+                <li>Сертифицированный фибробетон</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__num">B</div>
+              <h3>Плиты перекрытия</h3>
+              <p>Межэтажные элементы с высокой несущей способностью и точной геометрией для ровных перекрытий без «пляски» полов.</p>
+              <ul>
+                <li>Заводская сборка арматурного каркаса</li>
+                <li>Контроль качества на каждом этапе</li>
+                <li>Совместимость с линейкой БЭНПАН</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__num">C</div>
+              <h3>Межкомнатные перегородки</h3>
+              <p>Лёгкие и прочные перегородочные панели для гибкой планировки без лишней нагрузки на фундамент.</p>
+              <ul>
+                <li>Быстрая установка на объекте</li>
+                <li>Ровные поверхности под отделку</li>
+                <li>Единая технологическая линейка</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section class="tour wrap" id="contacts" aria-labelledby="contact-title">
-      <div>
-        <p class="eyebrow">СВЯЗАТЬСЯ С НАМИ</p>
-        <h2 id="contact-title">Запросите расчёт<br>комплекта панелей</h2>
-        <p>Оставьте заявку — мы подберём линейку панелей, рассчитаем стоимость и подготовим спецификацию материалов под ваш проект.</p>
-        <p class="tour-phone"><a href="tel:+74992831614">+7 (499) 283-16-14</a></p>
-        <p><a href="mailto:dom@benpan.ru">dom@benpan.ru</a></p>
-        <p class="contact-address">108810, Москва, Терминальный пр., 5, стр. 5</p>
-      </div>
-      <form id="contact-form" class="contact-form">
-        <h3>Оставить заявку</h3>
-        <p>Менеджер свяжется с вами в рабочее время</p>
-        <label>
-          Имя
-          <input type="text" name="name" required autocomplete="name">
-        </label>
-        <label>
-          Телефон
-          <input type="tel" name="phone" required autocomplete="tel">
-        </label>
-        <label>
-          Площадь дома, м²
-          <input type="text" name="area" placeholder="Например, 130">
-        </label>
-        <label>
-          Комментарий
-          <input type="text" name="comment" placeholder="Линейка панелей или проект">
-        </label>
-        <button class="button" type="submit">Отправить заявку</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-        <p class="form-consent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
-      </form>
-    </section>
-  </main>
+      <section id="technology" class="section section--grey">
+        <div class="container tech">
+          <div class="tech__text">
+            <p class="section__label">Технология</p>
+            <h2>Инновационные ребристые панели БЭНПАН</h2>
+            <p>Мы производим железобетонные панели по собственной технологии: ребро жёсткости, слой утеплителя и декоративная облицовка формируются на заводе. На стройплощадку приходит готовый элемент — остаётся только монтаж и подключение инженерии.</p>
+            <p>Такой подход даёт предсказуемое качество, сокращает сроки и исключает «сюрпризы» каменной кладки или мокрых процессов на участке.</p>
+            <div class="tech__tags">
+              <span>АПЕКС</span>
+              <span>БЭНПАН–Д</span>
+              <span>БЭНПАН+</span>
+              <span>БЭНПАН Премиум</span>
+            </div>
+          </div>
+          <div class="tech__panel">
+            <img class="tech__diagram" src="assets/panel-diagram.svg" alt="Схема слоёв ЖБИ панели БЭНПАН" width="320" height="240">
+            <h3>Что получает застройщик</h3>
+            <ul class="check-list">
+              <li>Заводскую точность и повторяемость размеров</li>
+              <li>Готовый архитектурный облик фасада</li>
+              <li>Каналы для электрики, воды и вентиляции</li>
+              <li>Экологически безопасный состав материалов</li>
+              <li>Документы и сертификаты на продукцию</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <footer class="footer wrap">
-    <img class="logo" src="assets/logo.svg" alt="БЭНПАН" width="140" height="56">
-    <div class="footer-info">
-      <p>© ООО «БЭНПАН», 2026</p>
-      <p>ИНН 7751124877 · dom@benpan.ru</p>
-    </div>
-    <a href="https://benpan.ru/" target="_blank" rel="noopener">benpan.ru ↗</a>
-  </footer>
+      <section id="advantages" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__label">Сравнение</p>
+            <h2>Почему выбирают ЖБИ панели БЭНПАН</h2>
+          </div>
+          <div class="table-wrap">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Материал</th>
+                  <th>Сроки</th>
+                  <th>Теплоизоляция</th>
+                  <th>Долговечность</th>
+                  <th>Точность</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Кирпич</td>
+                  <td>8–12 мес.</td>
+                  <td>Нужно утепление</td>
+                  <td>Высокая</td>
+                  <td>Зависит от бригады</td>
+                </tr>
+                <tr>
+                  <td>Газобетон</td>
+                  <td>5–8 мес.</td>
+                  <td>Хорошая</td>
+                  <td>Боится влаги</td>
+                  <td>Зависит от блоков</td>
+                </tr>
+                <tr>
+                  <td>Каркас</td>
+                  <td>2–4 мес.</td>
+                  <td>Нужна вентиляция</td>
+                  <td>25–50 лет</td>
+                  <td>Зависит от монтажа</td>
+                </tr>
+                <tr class="compare-table__highlight">
+                  <td><strong>ЖБИ панели БЭНПАН</strong></td>
+                  <td><strong>3–4 мес.</strong></td>
+                  <td><strong>Лучшая в классе</strong></td>
+                  <td><strong>100+ лет</strong></td>
+                  <td><strong>±3 мм</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section section--dark">
+        <div class="container">
+          <div class="section__head section__head--light">
+            <p class="section__label section__label--light">Как мы работаем</p>
+            <h2>От заявки до отгрузки панелей</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="steps__num">1</span>
+              <h3>Заявка и консультация</h3>
+              <p>Обсуждаем проект, площадь, этажность и желаемую комплектацию.</p>
+            </li>
+            <li>
+              <span class="steps__num">2</span>
+              <h3>Расчёт комплекта</h3>
+              <p>Формируем спецификацию панелей, узлов и срок производства.</p>
+            </li>
+            <li>
+              <span class="steps__num">3</span>
+              <h3>Изготовление на заводе</h3>
+              <p>Контроль качества на каждом этапе — от арматуры до финишного слоя.</p>
+            </li>
+            <li>
+              <span class="steps__num">4</span>
+              <h3>Доставка и поддержка</h3>
+              <p>Организуем отгрузку и сопровождаем монтажную бригаду документацией.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container faq">
+          <div class="section__head">
+            <p class="section__label">FAQ</p>
+            <h2>Частые вопросы о ЖБИ панелях</h2>
+          </div>
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>Чем панель БЭНПАН отличается от обычного железобетона?</summary>
+              <p>Это готовый стеновой модуль: несущий слой, утеплитель, декоративная облицовка и технологические каналы формируются на заводе. На объекте не нужны «мокрые» процессы для стенового контура.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Можно ли заказать только панели без строительства?</summary>
+              <p>Да. Мы поставляем комплекты ЖБИ изделий для подрядчиков и девелоперов. Состав и объём фиксируются в спецификации до производства.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Как рассчитывается стоимость комплекта?</summary>
+              <p>На цену влияют площадь, тип панелей, архитектурные решения и логистика. Для точного расчёта достаточно проекта или эскиза с основными размерами.</p>
+            </details>
+            <details class="faq__item">
+              <summary>Есть ли сертификаты на продукцию?</summary>
+              <p>Да, панели проходят заводской контроль и имеют необходимую разрешительную документацию для применения в гражданском строительстве.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta">
+        <div class="container cta__grid">
+          <div class="cta__info">
+            <p class="section__label section__label--light">Контакты</p>
+            <h2>Запросите расчёт комплекта панелей</h2>
+            <p>Оставьте контакты — инженер свяжется с вами, уточнит параметры объекта и подготовит предварительную спецификацию.</p>
+            <div class="cta__contacts">
+              <a class="cta__phone" href="tel:+74992831614">+7 499 283-16-14</a>
+              <a class="cta__mail" href="mailto:dom@benpan.ru">dom@benpan.ru</a>
+              <p class="cta__address">Москва и Московская область</p>
+            </div>
+          </div>
+          <form id="contact-form" class="cta__form" action="#" method="post">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Как к вам обращаться" required>
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </label>
+            <label>
+              <span>Комментарий</span>
+              <textarea name="message" rows="3" placeholder="Площадь, этажность, регион"></textarea>
+            </label>
+            <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+            <p id="form-status" class="cta__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <img src="assets/logo.svg" alt="БЭНПАН" width="120" height="48">
+        <p>© БЭНПАН — железобетонные панели для малоэтажного строительства</p>
+        <a href="mailto:support@benpan.ru">support@benpan.ru</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
