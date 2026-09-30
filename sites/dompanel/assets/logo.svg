@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" role="img" aria-label="ДомПанель">
+  <rect width="40" height="40" rx="9" fill="#1f1f1f"/>
+  <path d="M9 20.5L20 11L31 20.5V34H24.2V25.6H15.8V34H9V20.5Z" fill="#ee7d1b"/>
+  <rect x="15.6" y="25.4" width="8.8" height="8.6" fill="#1f1f1f"/>
+</svg>
