@@ -1,13 +1,14 @@
 /**
- * dompanel-v2: нижний блок «Готовы обсудить серию?» показывается попапом
- * после паузы без действий пользователя. Остальная логика страницы — скрипты Tilda.
+ * dompanel-v2: Tilda-блок попапа «Получите расчёт проекта и домокомплекта»
+ * (rec1173237956) показывается после паузы без действий пользователя.
+ * Остальная логика страницы — штатные скрипты Tilda.
  */
 (function () {
-  var CTA_RECORD_ID = "rec1173237931";
+  var POPUP_RECORD_ID = "rec1173237956";
   var IDLE_MS = 12000;
   var SESSION_KEY = "dompanel-cta-popup-shown";
 
-  var cta = null;
+  var record = null;
   var overlay = null;
   var holder = null;
   var idleTimer = null;
@@ -34,28 +35,24 @@
     overlay.className = "dp-cta-popup";
     overlay.setAttribute("role", "dialog");
     overlay.setAttribute("aria-modal", "true");
-    overlay.setAttribute("aria-label", "Получить расчёт проекта");
-
-    var dialog = document.createElement("div");
-    dialog.className = "dp-cta-popup__dialog";
-
-    var close = document.createElement("button");
-    close.type = "button";
-    close.className = "dp-cta-popup__close";
-    close.setAttribute("aria-label", "Закрыть");
-    close.innerHTML = "&times;";
+    overlay.setAttribute("aria-label", "Получите расчёт проекта и домокомплекта");
 
     holder = document.createElement("div");
-    holder.className = "dp-cta-popup__body";
+    holder.className = "dp-cta-popup__dialog";
 
-    dialog.appendChild(close);
-    dialog.appendChild(holder);
-    overlay.appendChild(dialog);
+    overlay.appendChild(holder);
     document.body.appendChild(overlay);
 
-    close.addEventListener("click", closePopup);
     overlay.addEventListener("click", function (event) {
-      if (event.target === overlay) closePopup();
+      if (event.target === overlay) {
+        closePopup();
+        return;
+      }
+      var link = event.target.closest ? event.target.closest('a[href*="closepopup"]') : null;
+      if (link) {
+        event.preventDefault();
+        closePopup();
+      }
     });
   }
 
@@ -76,16 +73,16 @@
   }
 
   function openPopup() {
-    if (shown || !cta) return;
+    if (shown || !record) return;
     shown = true;
     rememberShown();
     if (!overlay) buildOverlay();
 
-    holder.appendChild(cta);
-    cta.classList.add("dp-cta-popup__record");
+    holder.appendChild(record);
+    record.classList.add("dp-cta-popup__record");
     document.body.classList.add("dp-cta-popup-open");
     overlay.classList.add("is-visible");
-    loadLazyImages(cta);
+    loadLazyImages(record);
     window.dispatchEvent(new Event("resize"));
   }
 
@@ -102,10 +99,11 @@
   }
 
   function init() {
-    cta = document.getElementById(CTA_RECORD_ID);
-    if (!cta || alreadyShown()) return;
+    record = document.getElementById(POPUP_RECORD_ID);
+    if (!record) return;
 
-    cta.classList.add("dp-cta-hidden");
+    record.classList.add("dp-cta-hidden");
+    if (alreadyShown()) return;
 
     var events = ["mousemove", "mousedown", "keydown", "scroll", "touchstart", "wheel"];
     for (var i = 0; i < events.length; i++) {
