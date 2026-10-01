@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ДомПанель — официальный дилер БЭНПАН. Домокомплекты и гаражи из заводских ЖБИ панелей: архитектурное ателье, сертификация, монтаж за 3–5 дней.">
+  <meta name="theme-color" content="#ee7d1b">
+  <title>ДомПанель — официальный дилер БЭНПАН. Домокомплекты и гаражи</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__region">Официальный дилер технологии БЭНПАН · Москва и область</span>
+      <div class="topbar__contacts">
+        <a class="topbar__phone" href="tel:+74992831614">+7 499 283-16-14</a>
+        <span class="topbar__hours">Ежедневно с 9:00 до 20:00</span>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo header__logo--brand" href="#top" aria-label="ДомПанель — официальный дилер БЭНПАН">
+        <img src="assets/logo.svg" alt="БЭНПАН" width="156" height="62">
+      </a>
+      <a class="header__phone" href="tel:+74992831614">+7 499 283-16-14</a>
+      <nav id="site-menu" class="header__nav" aria-label="Основное меню">
+        <a href="#kits">Домокомплекты</a>
+        <a href="#garages">Гаражи</a>
+        <a href="#atelier">Ателье</a>
+        <a href="#certs">Сертификация</a>
+        <a href="#video">Видео</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <button class="btn btn--primary header__cta" type="button" data-open-quiz>Рассчитать стоимость</button>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="site-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" style="background-image: url('assets/projects/hero.webp')"></div>
+      <div class="container hero__content">
+        <p class="hero__region">Строительство домов из заводских ЖБИ панелей БЭНПАН</p>
+        <h1>Домокомплекты из панелей БЭНПАН — <span class="text-accent">от 3–5 дней</span> сборка коробки <span class="text-accent">с гарантией 50 лет</span></h1>
+        <p class="hero__lead">Капитальный дом или гараж из утеплённых ребристых панелей: заводская геометрия, каналы для инженерии внутри стен и готовый фасад. Без усадки и «мокрых» процессов на участке.</p>
+        <p class="hero__trust"><a href="#kits"><u class="text-accent">Более 200 проектов</u> архитектурного ателье БЭНПАН с 2010 года</a></p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" type="button" data-open-quiz>Рассчитать стоимость</button>
+          <a class="btn btn--ghost" href="#kits">Смотреть домокомплекты</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-band" aria-label="Преимущества">
+      <div class="container promo-band__inner">
+        <p>Мы учли всё для комфортной и безопасной жизни в доме из панелей БЭНПАН — от завода в Крёкшино до монтажа на участке</p>
+        <button class="btn btn--primary" type="button" data-open-quiz>Рассчитать стоимость</button>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust__grid">
+        <article>
+          <span>01</span>
+          <h3>Фиксированная цена</h3>
+          <p>Состав домокомплекта и стоимость закрепляются в договоре до производства.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Завод, не стройка</h3>
+          <p>Панели, фасад и каналы коммуникаций изготавливаются на заводе в Крёкшино.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Гарантия 50 лет</h3>
+          <p>На несущие конструкции — сертификат и паспорт качества на каждое изделие.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>От проекта до ключей</h3>
+          <p>Типовой дом в тёплом контуре — до 90 дней, круглогодичный монтаж.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="kits" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Подготовили для вас <span class="text-accent">проектные решения</span>, продуманные до мелочей</h2>
+          <p class="section__desc">Более 200 типовых и специальных проектов архитектурного ателье БЭНПАН. Планировку можно адаптировать под участок и семью: панели позволяют свободные пролёты до 11–15 м без колонн.</p>
+        </div>
+        <div class="catalog-wrap">
+        <div class="catalog" id="catalog-slider">
+          <article class="project" data-project="bp-54">
+            <div class="project__photo">
+              <img src="assets/projects/bp-54.webp" alt="Домокомплект БП-54" width="800" height="520">
+              <div class="project__badges"><span class="badge badge--hit">Хит</span><span class="badge">Компакт</span></div>
+            </div>
+            <div class="project__body">
+              <h3>БП-54</h3>
+              <p class="project__price">от 5 983 083 ₽</p>
+              <ul class="project__meta">
+                <li><strong>44,9 м²</strong> общая площадь</li>
+                <li><strong>6,6 × 9,6 м</strong> габариты</li>
+                <li><strong>2</strong> комнаты</li>
+              </ul>
+              <p>Компактный одноэтажный дом для семьи из 2–3 человек: две спальни, кухня-столовая и котельная. Плоская крыша, выход на террасу, высота панелей 3,05 м.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="БП-54">Рассчитать этот проект</button>
+            </div>
+          </article>
+
+          <article class="project" data-project="bp-98">
+            <div class="project__photo">
+              <img src="assets/projects/bp-98-5.webp" alt="Домокомплект БП-98/5" width="800" height="520">
+              <div class="project__badges"><span class="badge badge--top">Топ</span><span class="badge">Семья</span></div>
+            </div>
+            <div class="project__body">
+              <h3>БП-98/5</h3>
+              <p class="project__price">от 8 366 626 ₽</p>
+              <ul class="project__meta">
+                <li><strong>95 м²</strong> общая площадь</li>
+                <li><strong>10,8 × 10,8 м</strong> габариты</li>
+                <li><strong>4</strong> комнаты</li>
+              </ul>
+              <p>Одноэтажный дом 11×11 с тремя спальнями, двумя санузлами и отдельной котельной. Кухня-гостиная с выходом во двор, вальмовая крыша, панели БЭНПАН Премиум.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="БП-98/5">Рассчитать этот проект</button>
+            </div>
+          </article>
+
+          <article class="project" data-project="bp-134">
+            <div class="project__photo">
+              <img src="assets/projects/bp-134.webp" alt="Домокомплект БП-134" width="800" height="520">
+              <div class="project__badges"><span class="badge badge--top">Топ</span><span class="badge">4 спальни</span></div>
+            </div>
+            <div class="project__body">
+              <h3>БП-134</h3>
+              <p class="project__price">от 10 260 940 ₽</p>
+              <ul class="project__meta">
+                <li><strong>136,9 м²</strong> общая площадь</li>
+                <li><strong>11,3 × 13,3 м</strong> габариты</li>
+                <li><strong>4</strong> комнаты</li>
+              </ul>
+              <p>Одноэтажный дом с тамбуром, холлом, четырьмя спальнями, двумя санузлами и котельной. Двухскатная крыша, одна из спален легко становится кабинетом.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="БП-134">Рассчитать этот проект</button>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__photo">
+              <img src="assets/projects/bp-84.webp" alt="Домокомплект БП-84" width="800" height="520">
+            </div>
+            <div class="project__body">
+              <h3>БП-84</h3>
+              <p class="project__price">от 6 400 887 ₽</p>
+              <ul class="project__meta">
+                <li><strong>71,3 м²</strong> общая площадь</li>
+                <li><strong>6,8 × 12,9 м</strong> габариты</li>
+                <li><strong>3</strong> комнаты</li>
+              </ul>
+              <p>Вытянутый одноэтажный дом для участка с узким пятном застройки. Три комнаты, рациональная планировка без лишних холлов.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="БП-84">Рассчитать этот проект</button>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__photo">
+              <img src="assets/projects/bp-127.webp" alt="Домокомплект БП-127" width="800" height="520">
+            </div>
+            <div class="project__body">
+              <h3>БП-127</h3>
+              <p class="project__price">от 9 244 455 ₽</p>
+              <ul class="project__meta">
+                <li><strong>111,5 м²</strong> общая площадь</li>
+                <li><strong>10,2 × 13,2 м</strong> габариты</li>
+                <li><strong>4</strong> комнаты</li>
+              </ul>
+              <p>Семейный одноэтажный коттедж 111 м²: четыре комнаты и продуманное зонирование для постоянного проживания.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="БП-127">Рассчитать этот проект</button>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__photo">
+              <img src="assets/projects/pb-134.webp" alt="Домокомплект ПБ-134" width="800" height="520">
+              <div class="project__badges"><span class="badge">5 комнат</span></div>
+            </div>
+            <div class="project__body">
+              <h3>ПБ-134</h3>
+              <p class="project__price">Цена по запросу</p>
+              <ul class="project__meta">
+                <li><strong>132,4 м²</strong> общая площадь</li>
+                <li><strong>9,6 × 11,2 м</strong> габариты</li>
+                <li><strong>5</strong> комнат</li>
+              </ul>
+              <p>Двухэтажный дом с пятью комнатами: больше спален при компактном пятне застройки 10×11 м.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="ПБ-134">Рассчитать этот проект</button>
+            </div>
+          </article>
+        </div>
+        <div class="catalog-nav" aria-hidden="false">
+          <button type="button" id="catalog-prev" aria-label="Предыдущие проекты">‹</button>
+          <button type="button" id="catalog-next" aria-label="Следующие проекты">›</button>
+        </div>
+        </div>
+        <p class="section__note">Цены — ориентир по комплектациям производителя на benpan.ru. Итог зависит от комплекта (домокомплект / тёплый контур / под ключ), фундамента и участка. В каталоге БЭНПАН — более 200 проектов.</p>
+      </div>
+    </section>
+
+    <section id="garages" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2><span class="text-accent">Заводские комплекты</span> гаражей на 1–3 машины</h2>
+          <p class="section__desc">Готовый ЖБИ-комплект с точной геометрией: монтаж коробки 3–7 рабочих дней, без усадки, с рекомендациями по фундаменту. Можно добавить секционные ворота, утепление, кровлю и отделку.</p>
+        </div>
+        <div class="catalog catalog--grid catalog--two">
+          <article class="project">
+            <div class="project__photo">
+              <img src="assets/garage/g1.webp" alt="Гараж 4×6 из сборных ЖБ панелей" width="800" height="520">
+              <div class="project__badges"><span class="badge badge--hit">1 машина</span></div>
+            </div>
+            <div class="project__body">
+              <h3>Гараж 4×6</h3>
+              <p class="project__price">Расчёт по заявке</p>
+              <ul class="project__meta">
+                <li><strong>26,04 м²</strong> площадь</li>
+                <li><strong>4,2 × 6,2 м</strong> габариты</li>
+                <li><strong>1</strong> машиноместо</li>
+              </ul>
+              <p>Сборный гараж из ЖБ панелей для одного автомобиля, мастерской или хозблока. Капитальная конструкция без посредников — напрямую с производства.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="Гараж 4×6">Рассчитать гараж</button>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__photo">
+              <img src="assets/garage/g2.webp" alt="Гараж на 2 машины с двумя воротами" width="800" height="520">
+              <div class="project__badges"><span class="badge badge--top">2 машины</span></div>
+            </div>
+            <div class="project__body">
+              <h3>Гараж на 2 машины</h3>
+              <p class="project__price">Расчёт по заявке</p>
+              <ul class="project__meta">
+                <li><strong>50,84 м²</strong> площадь</li>
+                <li><strong>8,2 × 6,2 м</strong> габариты</li>
+                <li><strong>2</strong> ворот</li>
+              </ul>
+              <p>Комплект на две машины с двумя воротами. Подходит как отдельный гараж или блок, пристроенный к дому из панелей БЭНПАН.</p>
+              <button class="btn btn--outline" type="button" data-open-quiz data-preset="Гараж на 2 машины">Рассчитать гараж</button>
+            </div>
+          </article>
+        </div>
+        <div class="garage-extra">
+          <img src="assets/garage/why.webp" alt="Гараж из панелей БЭНПАН" width="480" height="320">
+          <div>
+            <h3>Нужен гараж на 3 машины или нестандартные ворота?</h3>
+            <p>Ателье адаптирует типовой комплект под участок: ширину ворот, утепление, кровлю, мастерскую и пристройку к дому. В комплект входят панели, перекрытия, крепёж, проект и спецификация.</p>
+            <button class="btn btn--primary" type="button" data-open-quiz data-preset="Гараж на 3 машины">Запросить конфигурацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="atelier" class="section">
+      <div class="container atelier">
+        <div class="atelier__text">
+          <h2><span class="text-accent">Архитектурное ателье</span> — от эскиза до рабочих чертежей панелей</h2>
+          <p>Команда архитекторов и конструкторов БЭНПАН разрабатывает частные дома, кафе и магазины под технологию ребристых панелей. Типовой проект можно изменить точечно — это быстрее и выгоднее, чем проектировать с нуля.</p>
+          <ul class="check-list">
+            <li>Эскизный проект: стилистика, фасады, визуализация</li>
+            <li>Архитектурный проект и планировки под ваш сценарий жизни</li>
+            <li>Инженерия: электрика, отопление, вентиляция, вода и канализация</li>
+            <li>Конструкции Ж/Б: фундамент, несущие стены, перекрытия</li>
+            <li>Кровля, навесы и дизайн-проект интерьера</li>
+          </ul>
+        </div>
+        <div class="atelier__visual">
+          <img src="assets/atelier/studio.png" alt="Архитектурное ателье БЭНПАН" width="640" height="480">
+          <div class="atelier__card">
+            <strong>200+</strong>
+            <span>готовых проектов в каталоге</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="factory" class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <h2><span class="text-accent">Завод полного цикла</span> в 20 км от МКАД</h2>
+          <p class="section__desc">Производственный корпус в посёлке совхоза Крёкшино занимает 22 000 м². Здесь выпускают стеновые панели, плиты перекрытий, перегородки и комплектующие домокомплекта — с лабораторным контролем на каждом этапе.</p>
+        </div>
+        <div class="factory-grid">
+          <article>
+            <h3>Что входит в домокомплект</h3>
+            <ul class="check-list check-list--light">
+              <li>Пакет проектной документации</li>
+              <li>Комплект ж/б панелей, перекрытий и крепежа</li>
+              <li>Спецификация и штрихкодирование панелей</li>
+              <li>Паспорт качества на каждое изделие</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Линейка панелей</h3>
+            <ul class="tags">
+              <li>АПЕКС</li>
+              <li>БЭНПАН–Д</li>
+              <li>БЭНПАН+</li>
+              <li>БЭНПАН Премиум</li>
+            </ul>
+            <p>Типовая высота 2,72 и 3,05 м — без сверхгабарита по дороге. Нестандартные размеры — под заказ. Высота потолков может быть более 3,5 м.</p>
+          </article>
+          <article>
+            <h3>Цифры, которые держат дом</h3>
+            <ul class="mini-stats">
+              <li><strong>±3 мм</strong> заводская точность</li>
+              <li><strong>52 дБ</strong> шумоизоляция</li>
+              <li><strong>REI 150</strong> предел огнестойкости</li>
+              <li><strong>3,05–6</strong> R·м²·°C/Вт теплозащита</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Вся продукция <span class="text-accent">проходит лабораторию</span> и имеет паспорта</h2>
+          <p class="section__desc">Система менеджмента качества ГОСТ Р ИСО 9001-2015. Панели соответствуют ГОСТ 18979-2014 «Плиты железобетонные для стен зданий». Есть экологический сертификат, ISO 14001, сертификаты огнестойкости на БЭНПАН, БЭНПАН+ и БЭНПАН Премиум, контроль заводского производства стеновых панелей и плит перекрытий.</p>
+        </div>
+        <div class="certs">
+          <figure>
+            <img src="assets/certs/cert-1.png" alt="Сертификат соответствия панелей БЭНПАН" width="90" height="56">
+            <figcaption>Соответствие панелей БЭНПАН</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/certs/cert-2.png" alt="Сертификат ГОСТ Р ИСО 9001-2015" width="90" height="56">
+            <figcaption>ГОСТ Р ИСО 9001-2015</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/certs/cert-3.png" alt="Экологический сертификат" width="90" height="56">
+            <figcaption>Экологический сертификат</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/certs/cert-4.png" alt="Сертификат огнестойкости" width="90" height="56">
+            <figcaption>Огнестойкость панелей</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/certs/cert-5.png" alt="Сертификат заводского контроля" width="90" height="56">
+            <figcaption>Заводской контроль FPC</figcaption>
+          </figure>
+        </div>
+        <div class="certs-points">
+          <article>
+            <h3>Испытания</h3>
+            <p>Огневые испытания в ЦНИИСК им. Кучеренко, нагружение плит до разрушения, проверка марок бетона, тепловизор готовых домов.</p>
+          </article>
+          <article>
+            <h3>На объекте</h3>
+            <p>Фундамент принимает лаборатория по прочности. Швы герметизируются, панели соединяются болтами, анкер-шпильками HILTI или сваркой закладных.</p>
+          </article>
+          <article>
+            <h3>Арматура</h3>
+            <p>Стержневая сталь А500 толщиной 12–18 мм. Утеплитель по рёбрам — 80 мм, приведённое сопротивление выше норм Москвы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Коротко о <span class="text-accent">монтаже, тёплом контуре</span> и испытаниях</h2>
+          <p class="section__desc">Оригинальные видео производителя: сборка коробки, дом за 45 дней в комплектации «тёплый контур» и лабораторные тесты панелей.</p>
+        </div>
+        <div class="videos">
+          <button class="video-card" type="button" data-video="DUT0EcoexFo" data-title="Монтаж коробки дома">
+            <img src="assets/video/yt-montazh.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Монтаж коробки · 3–5 дней</span>
+          </button>
+          <button class="video-card" type="button" data-video="GTxnwZ_sSvM" data-title="Сборка панелей БЭНПАН">
+            <img src="assets/video/yt-panels.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Болты, HILTI, герметик швов</span>
+          </button>
+          <button class="video-card" type="button" data-video="yzr0uedrjsk" data-title="Дом за 45 дней">
+            <img src="assets/video/yt-45.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Тёплый контур за 45 дней</span>
+          </button>
+          <button class="video-card" type="button" data-video="4BpVvcN_Xgg" data-title="Установка плит перекрытия">
+            <img src="assets/video/yt-slabs.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Монтаж плит перекрытия</span>
+          </button>
+          <button class="video-card" type="button" data-video="smWuBnfTDr4" data-title="Огневые испытания">
+            <img src="assets/video/yt-fire.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Огневые испытания панели</span>
+          </button>
+          <button class="video-card" type="button" data-video="njWGIOC9aHg" data-title="Испытание нагрузкой">
+            <img src="assets/video/yt-load.jpg" alt="" width="480" height="270">
+            <span class="video-card__play" aria-hidden="true"></span>
+            <span class="video-card__label">Нагружение плиты до разрушения</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2><span class="text-accent">Возьмём на себя все этапы</span> — от заявки до сборки на участке</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="steps__num">.01</span>
+            <h3>Консультация и проект</h3>
+            <p>Подбираем домокомплект или гараж из каталога, либо запускаем ателье. Считаем комплектацию под участок.</p>
+          </li>
+          <li>
+            <span class="steps__num">.02</span>
+            <h3>Договор и производство</h3>
+            <p>Фиксируем состав, сроки и цену. Завод изготавливает панели, лаборатория выдаёт паспорта, элементы маркируются.</p>
+          </li>
+          <li>
+            <span class="steps__num">.03</span>
+            <h3>Фундамент и монтаж</h3>
+            <p>После набора прочности фундамент принимает лаборатория. На участок выходит кран: коробка дома — 1–15 дней, обычно 3–5.</p>
+          </li>
+          <li>
+            <span class="steps__num">.04</span>
+            <h3>Тёплый контур и отделка</h3>
+            <p>Окна, кровля, инженерия по заводским каналам. Отделку можно начинать сразу: панели безусадочные.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Заботимся о каждом клиенте и <span class="text-accent">даём понятные условия</span></h2>
+        </div>
+        <div class="benefits">
+          <article>
+            <h3>Фиксированные сроки</h3>
+            <p>График производства и монтажа закрепляем в договоре. Сборка коробки в обычном случае занимает 3–5 дней.</p>
+          </article>
+          <article>
+            <h3>Фиксированная цена</h3>
+            <p>Смета и спецификация домокомплекта не «плывут» по ходу изготовления панелей.</p>
+          </article>
+          <article>
+            <h3>Гарантия 50 лет</h3>
+            <p>На материалы и несущие конструкции — по сертификату производителя. Расчётный ресурс — 100+ лет.</p>
+          </article>
+          <article>
+            <h3>Круглый год</h3>
+            <p>Строим весь год. Отдельные работы не ведём ниже −10 °C, зимний график длиннее на несколько недель.</p>
+          </article>
+          <article>
+            <h3>Без усадки</h3>
+            <p>Железобетон заводского изготовления. К отделке можно приступать сразу после монтажа коробки.</p>
+          </article>
+          <article>
+            <h3>Экскурсия на завод</h3>
+            <p>Можно увидеть производство в Крёкшино: от арматурного каркаса до готовой панели с фасадом.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq">
+        <div class="section__head">
+          <h2>Отвечаем на <span class="text-accent">самые частые вопросы</span></h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Сколько занимает строительство?</summary>
+            <p>Сборка коробки — от 1 до 15 дней, обычно 3–5. Типовая комплектация дома — до двух месяцев. «Под ключ» — 3,5–4 месяца, ориентир производителя — 90 дней от проекта до заселения. Гараж монтируется за 3–7 рабочих дней.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Что входит в домокомплект?</summary>
+            <p>Заводские ЖБИ панели, проектная документация, крепёж и спецификация. Дополнительно — фасад с завода, инженерия и отделка. Комплектации: домокомплект, тёплый контур, тёплый контур+, под ключ.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Можно ли изменить типовой проект?</summary>
+            <p>Да. Ателье адаптирует планировку и фасад под участок либо готовит индивидуальный проект частных домов, кафе и магазинов.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Нужна ли усадка перед отделкой?</summary>
+            <p>Нет. Панели безусадочные. Внутренняя поверхность БЭНПАН+ и Премиум готова под финишную отделку без штукатурки. Есть панели с предустановленным окном.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Какие сертификаты есть у панелей?</summary>
+            <p>ГОСТ Р ИСО 9001-2015, экологический сертификат, ISO 14001, сертификаты огнестойкости на линейки БЭНПАН / БЭНПАН+ / Премиум, FPC на стены и перекрытия, соответствие ГОСТ 18979-2014. Срок службы по сертификату — не менее 50 лет.</p>
+          </details>
+          <details class="faq__item">
+            <summary>ДомПанель — это завод?</summary>
+            <p>ДомПанель — официальный дилер технологии БЭНПАН. Производство, лаборатория и каталог проектов — завода БЭНПАН (Крёкшино). Мы подбираем комплект, считаем поставку и сопровождаем монтаж.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <div class="container cta__grid">
+        <div>
+          <h2>Построим дом для вас, <span class="text-accent">как строили бы для себя!</span></h2>
+          <p>Оставьте контакты — подготовим расчёт домокомплекта или гаража по технологии БЭНПАН. Можно приложить эскиз или ссылку на проект из каталога.</p>
+          <ul class="cta__facts">
+            <li>200+ проектов ателье</li>
+            <li>Завод 22 000 м²</li>
+            <li>Коробка за 3–5 дней</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="cta__form" action="#" method="post">
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required autocomplete="tel">
+          </label>
+          <label>
+            <span>Что считаем</span>
+            <input type="text" name="project" id="form-project" placeholder="Домокомплект, гараж или индивидуальный проект">
+          </label>
+          <label>
+            <span>Комментарий</span>
+            <textarea name="message" rows="3" placeholder="Площадь, участок, комплектация"></textarea>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+          <p id="form-status" class="cta__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="header__logo header__logo--brand" href="#top" aria-label="ДомПанель — на главную">
+        <img src="assets/logo.svg" alt="БЭНПАН" width="156" height="62">
+      </a>
+      <p>Официальный дилер БЭНПАН. Домокомплекты и гаражи из заводских ЖБИ панелей.</p>
+      <p><a href="tel:+74992831614">+7 499 283-16-14</a> · <a href="mailto:dom@benpan.ru">dom@benpan.ru</a></p>
+      <p>Технология, каталог и производство — БЭНПАН, Крёкшино. <a href="https://benpan.ru/" target="_blank" rel="noopener">benpan.ru</a></p>
+    </div>
+  </footer>
+
+  <button class="fab" type="button" data-open-quiz>Есть вопрос? Рассчитать стоимость →</button>
+
+  <div class="modal" id="quiz-modal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <div id="quiz">
+        <p class="quiz__head"><span id="quiz-step-label">Вопрос 1 из 6</span></p>
+        <div class="quiz__progress-wrap" aria-hidden="true"><div class="quiz__progress-bar" id="quiz-progress-bar"></div></div>
+        <div class="quiz__body">
+        <h2 id="quiz-title">Ответьте на 6 вопросов — <span class="text-accent">узнайте стоимость</span> домокомплекта</h2>
+        <div id="quiz-question" class="quiz__question"></div>
+        <div id="quiz-options" class="quiz__options"></div>
+        <form id="quiz-contacts" class="quiz__contacts" hidden>
+          <label>
+            <span>Имя</span>
+            <input type="text" name="quiz-name" required>
+          </label>
+          <label>
+            <span>Телефон</span>
+            <input type="tel" name="quiz-phone" required>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Получить расчёт</button>
+        </form>
+        <p id="quiz-done" class="quiz__done" hidden>Спасибо! Мы свяжемся с вами и пришлём расчёт по выбранным параметрам.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="video-modal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog modal__dialog--video" role="dialog" aria-modal="true" aria-labelledby="video-title">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <h2 id="video-title" class="visually-hidden">Видео</h2>
+      <div class="video-frame" id="video-frame"></div>
+    </div>
+  </div>
+</body>
+</html>
