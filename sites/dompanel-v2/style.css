@@ -1,5 +1,10 @@
 /*
-  dompanel-v2 — зеркало шаблона Paradigma Tilda «brus».
-  Основная вёрстка и стили: index.html (блоки Tilda) + CSS/JS static.tildacdn.com.
-  Локально только медиа в assets/brus/ и page-бандл tilda-blocks-page72620655.
+  dompanel-v2 — макет Tilda brus 1:1 (index.html + page72620655).
+  Контент: официальный дилер ДомПанель / БЭНПАН, B2B домокомплекты ЖБИ.
+  Медиа: assets/benpan, assets/projects, assets/certs, assets/video.
 */
+#rec1173237771 .tn-elem[data-elem-id="1702042185362"] .tn-atom {
+  overflow-wrap: anywhere;
+  font-size: 34px !important;
+  line-height: 1.2 !important;
+}
