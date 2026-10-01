@@ -90,6 +90,7 @@
     if (!overlay) return;
     overlay.classList.remove("is-visible");
     document.body.classList.remove("dp-cta-popup-open");
+    rememberShown();
   }
 
   function restartIdleTimer() {
@@ -111,6 +112,15 @@
     }
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") closePopup();
+    });
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest
+        ? event.target.closest('a[href*="closepopup"], a[href*="closeallpopup"]')
+        : null;
+      if (link) {
+        event.preventDefault();
+        closePopup();
+      }
     });
     restartIdleTimer();
   }
