@@ -80,6 +80,12 @@
 
     holder.appendChild(record);
     record.classList.add("dp-cta-popup__record");
+    // Нейтрализуем ссылки-закрывашки: picker.js игнорирует href="javascript:…",
+    // поэтому крестик больше не будет вызывать перезагрузку превью.
+    var closeLinks = record.querySelectorAll('a[href*="closepopup"], a[href*="closeallpopup"]');
+    for (var ci = 0; ci < closeLinks.length; ci++) {
+      closeLinks[ci].setAttribute("href", "javascript:void(0)");
+    }
     document.body.classList.add("dp-cta-popup-open");
     overlay.classList.add("is-visible");
     loadLazyImages(record);
