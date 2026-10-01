@@ -8,3 +8,57 @@
   font-size: 34px !important;
   line-height: 1.2 !important;
 }
+
+/* Блок «Готовы обсудить серию?» живёт только в попапе по бездействию */
+.dp-cta-hidden { display: none; }
+
+.dp-cta-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  background: rgba(16, 16, 18, 0.72);
+}
+.dp-cta-popup.is-visible { display: flex; }
+
+.dp-cta-popup__dialog {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  max-height: 92vh;
+  overflow: auto;
+  background: #f7f7f7;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+.dp-cta-popup__body { padding-top: 8px; }
+.dp-cta-popup__record.dp-cta-hidden { display: block; }
+
+.dp-cta-popup__close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 1;
+  color: #222;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.dp-cta-popup__close:hover { background: #ee7d1b; color: #fff; }
+
+body.dp-cta-popup-open { overflow: hidden; }
+
+@media screen and (max-width: 640px) {
+  .dp-cta-popup { padding: 12px 6px; }
+  .dp-cta-popup__dialog { border-radius: 12px; }
+}
