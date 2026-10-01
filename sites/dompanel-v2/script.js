@@ -106,6 +106,16 @@
   const quizContacts = document.getElementById("quiz-contacts");
   const quizDone = document.getElementById("quiz-done");
   const quizTitle = document.getElementById("quiz-title");
+  const quizProgressBar = document.getElementById("quiz-progress-bar");
+
+  function updateQuizProgress() {
+    if (!quizProgressBar) {
+      return;
+    }
+    const total = quizQuestions.length + 1;
+    const current = Math.min(quizState.step + 1, total);
+    quizProgressBar.style.width = String(Math.round((current / total) * 100)) + "%";
+  }
 
   function renderQuiz() {
     if (!quizQuestion || !quizOptions || !quizStepLabel || !quizContacts || !quizDone || !quizTitle) {
@@ -113,20 +123,22 @@
     }
 
     quizDone.hidden = true;
+    updateQuizProgress();
 
     if (quizState.step >= quizQuestions.length) {
       quizQuestion.innerHTML = "<p>Оставьте контакты — пришлём расчёт по выбранным параметрам.</p>";
       quizOptions.innerHTML = "";
       quizContacts.hidden = false;
       quizStepLabel.textContent = "Последний шаг";
-      quizTitle.textContent = "Куда отправить расчёт?";
+      quizTitle.innerHTML = "Куда отправить расчёт?";
       return;
     }
 
     const current = quizQuestions[quizState.step];
     quizContacts.hidden = true;
     quizStepLabel.textContent = "Вопрос " + String(quizState.step + 1) + " из " + String(quizQuestions.length);
-    quizTitle.textContent = "Ответьте на 6 вопросов — подготовим стоимость";
+    quizTitle.innerHTML =
+      "Ответьте на 6 вопросов — <span class=\"text-accent\">узнайте стоимость</span> домокомплекта";
     quizQuestion.innerHTML = "<h3>" + current.title + "</h3>";
     quizOptions.innerHTML = "";
 
@@ -230,11 +242,38 @@
   }
 
   const fab = document.querySelector(".fab");
-  if (fab) {
-    function updateFab() {
+  const progressBar = document.getElementById("progress-bar");
+
+  function onScroll() {
+    if (progressBar) {
+      const doc = document.documentElement;
+      const maxScroll = doc.scrollHeight - doc.clientHeight;
+      const ratio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+      progressBar.style.width = String(Math.min(100, ratio * 100)) + "%";
+    }
+    if (fab) {
       fab.classList.toggle("is-visible", window.scrollY > 420);
     }
-    window.addEventListener("scroll", updateFab, { passive: true });
-    updateFab();
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  const catalogSlider = document.getElementById("catalog-slider");
+  const catalogPrev = document.getElementById("catalog-prev");
+  const catalogNext = document.getElementById("catalog-next");
+
+  if (catalogSlider && catalogPrev && catalogNext) {
+    function scrollCatalog(direction) {
+      const card = catalogSlider.querySelector(".project");
+      const step = card ? card.getBoundingClientRect().width + 20 : 380;
+      catalogSlider.scrollBy({ left: direction * step, behavior: "smooth" });
+    }
+    catalogPrev.addEventListener("click", function () {
+      scrollCatalog(-1);
+    });
+    catalogNext.addEventListener("click", function () {
+      scrollCatalog(1);
+    });
   }
 })();
