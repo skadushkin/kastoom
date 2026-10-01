@@ -59,6 +59,22 @@
     });
   }
 
+  /** Tilda подставляет картинки из data-original только для видимых блоков. */
+  function loadLazyImages(root) {
+    var nodes = root.querySelectorAll("[data-original]");
+    for (var i = 0; i < nodes.length; i++) {
+      var node = nodes[i];
+      var src = node.getAttribute("data-original");
+      if (!src) continue;
+      if (node.tagName === "IMG") {
+        if (node.getAttribute("src") !== src) node.setAttribute("src", src);
+      } else if (!node.style.backgroundImage) {
+        node.style.backgroundImage = 'url("' + src + '")';
+      }
+      node.classList.add("loaded", "t-bgimg");
+    }
+  }
+
   function openPopup() {
     if (shown || !cta) return;
     shown = true;
@@ -69,6 +85,7 @@
     cta.classList.add("dp-cta-popup__record");
     document.body.classList.add("dp-cta-popup-open");
     overlay.classList.add("is-visible");
+    loadLazyImages(cta);
     window.dispatchEvent(new Event("resize"));
   }
 
